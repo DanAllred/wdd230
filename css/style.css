@@ -64,7 +64,7 @@ h1 {
 }
 
 .mypicture {
-    width: 90%;
+    width: 85%;
     height: 90%;
     grid-column-start: 4;
     grid-column-end: 5;
