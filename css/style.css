@@ -33,8 +33,7 @@ h1 span {
     font-size: 1.4rem;
 }
 
-h1,
-h3 {
+h1 {
     text-align: center;
 }
 
@@ -42,11 +41,6 @@ h2 {
     font-size: 2.4rem;
 }
 
-h3 {
-    color: var(--secondary);
-    font-weight: 400;
-    font-size: 1.6rem;
-}
 
 h1 {
     font-size: 2rem;
