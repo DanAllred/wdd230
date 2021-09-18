@@ -18,7 +18,6 @@ p {
 body {
     font-family: 'Krub', sans-serif;
     min-height: 100%;
-    background-color: var var(--primary);
 }
 
 #currentdate {
