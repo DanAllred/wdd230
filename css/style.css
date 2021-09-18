@@ -9,7 +9,7 @@
 html {
     box-sizing: border-box;
     min-height: 100%;
-    /* background-color: var(--primary); */
+    background-color: var(--secondary);
 }
 
 p {
@@ -35,7 +35,6 @@ h1 span {
 }
 
 h1,
-h2,
 h3 {
     text-align: center;
 }
@@ -58,8 +57,6 @@ h1 {
     margin: 0 auto;
     max-width: 1200px;
 }
-
-
 
 .middle {
     height: 450px;
@@ -91,11 +88,11 @@ h1 {
 
 .middlelessonpic h2 {
     color: var(--white);
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 4;
-    justify-content: center;
     align-self: center;
     margin-bottom: 5rem;
+    margin-left: 20%;
 }
 
 @media (max-width:768px) {
@@ -109,7 +106,7 @@ h1 {
 
 .middlelessonpic p {
     color: var(--white);
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: span 6;
@@ -123,9 +120,7 @@ h1 {
 }
 
 .lesson {
-    background-color: var(--secondary);
     color: var(--white);
-    padding: .5rem 3rem;
     border-radius: 5px;
     font-weight: 700;
     text-transform: capitalize;
@@ -139,9 +134,11 @@ h1 {
 }
 
 ul {
+    list-style: none;
+    display: grid;
     grid-column-start: 1;
     grid-column-end: 4;
-    margin-top: -150px;
+    margin-top: -190px;
     margin-left: 30%;
 }
 
@@ -174,7 +171,7 @@ li {
     ul {
         margin-left: 20%;
         padding: 0;
-        margin-top: -190px;
+        margin-top: -225px;
     }
 }
 
