@@ -27,14 +27,15 @@ body {
 
 h1 {
     font-size: 1.4rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
 }
 
 h1 span {
     font-size: 1.4rem;
-}
-
-h1 {
-    text-align: center;
 }
 
 h2 {
@@ -42,9 +43,7 @@ h2 {
 }
 
 
-h1 {
-    font-size: 2rem;
-}
+
 
 .middle {
     height: 450px;
@@ -181,3 +180,6 @@ li {
         align-items: flex-start;
     }
 }
+
+
+------------------------------------lesson 2-------------------
