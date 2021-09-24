@@ -1,0 +1,15 @@
+@media (max-width: 480px) {
+    .design-container {
+        display: grid;
+        width: 100%;
+        column-gap: 2%;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .docker,
+    .python,
+    .aws {
+        margin-bottom: 1rem;
+    }
+}
