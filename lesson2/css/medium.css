@@ -1,4 +1,4 @@
-@media (min-width: 480px) and (max-width: 880px) {
+@media (min-width: 480px) and (max-width: 1285px) {
     .principles-container {
         display: grid;
         width: 100%;
@@ -7,4 +7,8 @@
         justify-items: center;
         column-gap: unset;
     }
+    .copyright {
+        align-items: baseline;
+    }
 }
+

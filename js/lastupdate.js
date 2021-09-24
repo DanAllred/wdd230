@@ -1,6 +1,6 @@
 const d = new Date();
 const year = d.getFullYear();
-const fulldate = ` ${year}`;
+const fulldate = `${year}`;
 document.querySelector("#dateyear").textContent = fulldate;
 
 
