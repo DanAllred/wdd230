@@ -1,5 +1,5 @@
 @media (max-width: 480px) {
-    .design-container {
+    .principles-container {
         display: grid;
         width: 100%;
         column-gap: 2%;
@@ -7,9 +7,9 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-    .docker,
-    .python,
-    .aws {
+    .cougarfan,
+    .ford,
+    .stackoverflow {
         margin-bottom: 1rem;
     }
 }

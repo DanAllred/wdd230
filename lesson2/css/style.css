@@ -106,25 +106,9 @@ p {
     background-color: var(--primary);
 }
 
-/* @media(max-width:768px) {
-    .copyrights {
+@media(max-width:768px) {
+    .copyright {
         align-items: baseline;
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
-    .design-container {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        justify-items: center;
-        column-gap: unset;
-    }
-    .stackoverflow {
-        grid-column: 1/ span 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        margin-top: 1rem;
-    }
-} */

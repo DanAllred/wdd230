@@ -1,5 +1,10 @@
-@media (min-width: 32.5em)
-    {
-        .mypicture {float: right;}
-
+@media (min-width: 480px) and (max-width: 880px) {
+    .principles-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        column-gap: unset;
     }
+}
