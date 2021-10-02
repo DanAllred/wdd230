@@ -104,6 +104,10 @@ h3 {
     width: 100%;
 }
 
+.purpose img, .domain img {
+    width: 100%;
+}
+
 .copyright {
     display: flex;
     justify-content: center;
