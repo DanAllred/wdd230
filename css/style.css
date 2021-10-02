@@ -137,9 +137,17 @@ li {
     ul {
         margin-left: -1%;
     }
+    .mypicture {
+        width: 60%;
+        height: 90%;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        margin-top: 12.5px;
+    }
 }
 
-@media (max-width:540px) {
+@media (max-width:1200px) {
     ul {
         margin-left: -1%;
     }
