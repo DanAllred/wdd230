@@ -1,0 +1,11 @@
+#uniqueid {
+    color: blue;
+}
+
+#seconduniqueid {
+    color: green;
+}
+
+div.notunique {
+    color: blue;
+}
