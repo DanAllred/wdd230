@@ -1,8 +1,5 @@
-const d = new Date();
-const year = d.getFullYear();
-const fulldate = `${year}`;
-document.querySelector("#dateyear").textContent = fulldate;
+const copyrightyear = document.querySelector("#copyrightyear");
+copyrightyear.textContent = new Date().getFullYear();
 
-
-let oLastModif = new Date(document.lastModified)
-document.querySelector("#lastUpdated").textContent = oLastModif;
+const lastupdated = document.lastModified;
+document.getElementById("lastupdate").textContent = lastupdated;

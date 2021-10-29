@@ -5,53 +5,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
     <title>Dan Allred's Assignment Portal WDD 230</title>
-    <meta name="description" content="Assignment portal for Daniel Allred in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <meta name="description"
+        content="Assignment portal for Daniel Allred in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/medium.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script defer src="../js/lastupdate.js"></script>
 </head>
 
 <body>
     <header>
         <h1>
+            <img class="mypicture" src="images/file-2.jpg" alt="me">
             Daniel Allred
         </h1>
     </header>
     <main>
-        <div class="middle">
-            <div class="middlelessonpic">
-                <h2>WDD230 Assignment Portal</h2>
-                <img class="mypicture" src="images/file-2.jpg" alt="me">
-                <ul>
-                    <li>
-                        <a class="lesson" href=" lesson2/design-principles.html ">lesson 2</a>
-                        <a class="lesson" href="lesson3/index.html">lesson 3</a>
-                        <a class="lesson" href="lesson4/preston-4.html">lesson 4</a>
-                        <a class="lesson" href="lesson5/preston-5.html">lesson 5</a>
-                        <a class="lesson" href="lesson6/preston-6.html">lesson 6</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <h2>WDD 230: Assignment Portal</h2>
     </main>
+    <nav>
+        <ul>
+            <li><a class="lesson" href=" lesson2/design-principles.html ">lesson 2</a></li>
+            <li><a class="lesson" href="lesson3/index.html">lesson 3</a></li>
+            <li><a class="lesson" href="lesson4/preston-4.html">lesson 4</a></li>
+            <li><a class="lesson" href="lesson5/preston-5.html">lesson 5</a></li>
+            <li><a class="lesson" href="lesson6/preston-6.html">lesson 6</a></li>
+            <li><a class="lesson" href="lesson7/lazyload.html">lesson 7 Lazy Load</a></li>
+        </ul>
+    </nav>
     <footer>
-        <div class="copyright">
-            <p>
-                &copy;
-                <span id="dateyear"></span>| <a href="../index.html">Daniel Allred - WDD 230</a>
-                <p>Detroit, Michigan</p>
-                <p><a href="https://www.byui.edu/online">BYU-I | online Learning</a></p>
-        </div>
-        <div class="lastupdated">
-            <span id="lastUpdated">
-                <script src="js/lastupdate.js"></script>
-            </span>
-        </div>
+        &copy; <span id="copyrightyear"></span> | Daniel Allred | Detroit | <a class="byuilink"
+            href="https://www.byui.edu/online">BYUI Online Learning</a>
+        <br>Last Updated: <span id="lastupdate"></span>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-</body>
+    <script src="js/fonts.js"></script>
 
 </html>
