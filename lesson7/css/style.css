@@ -82,7 +82,27 @@ h3 {
     color: var(--dark);
 }
 
-#preston-5 {
+/* #preston-5 {
+    background-color: var(--primary);
+    color: var(--dark);
+} */
+
+/* #soda {
+    background-color: var(--primary);
+    color: var(--dark);
+} */
+
+/* #fish {
+    background-color: var(--primary);
+    color: var(--dark);
+} */
+
+/* #sc {
+    background-color: var(--primary);
+    color: var(--dark);
+} */
+
+#gal {
     background-color: var(--primary);
     color: var(--dark);
 }
@@ -232,6 +252,34 @@ footer {
     background-color: var(--primary);
 }
 
+.gallery {
+    padding: 0 2em 0;
+  }
+  .gallery ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    padding: 0;
+  }
+  .gallery ul li {
+    box-shadow: 0 0 5px #333;
+    margin: 0;
+    list-style-type: none;
+  }
+  .gallerygrid {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+  }
+  .gallerygrid img {
+    width: 100%;
+  }
+  .gallerygrid figcaption {
+    line-height: 1.5;
+    padding: 1rem 0.75rem;
+  }
+
+
 
 
 @media only screen and (min-width: 32.5em) {
@@ -273,10 +321,10 @@ footer {
         text-align: center;
     }
 
-    .prestonhero img {
+    /* .prestonhero img {
         display: block;
         margin: 0 auto;
-    }
+    } */
 
 	.weathersummary {
 		position: absolute;
@@ -346,6 +394,7 @@ footer {
         width: 36px;
         height: auto;
     }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -361,4 +410,5 @@ footer {
 		left: 45px;
 		bottom: 25px;
 	}
+
 }

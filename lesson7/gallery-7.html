@@ -12,14 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-    <script defer src="js/pancake.js"></script>
-    <script defer src="js/windchill.js"></script>
+    <script defer src="js/lazyload.js"></script>
+
 </head>
 
 <body>
-    <div class="pancake">
-        <p>Saturday = Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion!</p>
-    </div>
     <header>
         <div class="logo">
             <a href="home.html">
@@ -32,98 +29,96 @@
             <ul class="navigation">
                 <li><a class="ham" href="#" onclick="toggleMenu()"> &#x2630; Menu </a></li>
                 <li><a href=" home.html ">Home</a></li>
-                <li id="preston-5"><a href="preston-6.html"> Preston</a> </li>
-                <li><a href="#"> Soda Springs </a></li>
-                <li><a href="#"> Fish Haven </a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li id="preston-5"><a href="../lesson6/preston-6.html"> Preston</a> </li>
+                <li id="soda"><a href="#"> Soda Springs </a></li>
+                <li id="fish"><a href="#"> Fish Haven </a></li>
+                <li id="sc"><a href="#">Storm Center</a></li>
+                <li id="gal"><a href="gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
     </div>
-    <div class="herocontent">
-        <h2 id='pi'>Preston Idaho</h2>
-        <div class="hero">
-            <picture class="prestonhero">
-                <source srcset="images/franklinsmall.jpg" media="(max-width: 503px)">
-                <source srcset="images/franklinmedium.jpg" media="(max-width: 942px)">
-                <source srcset="images/franklinlarge.jpg" media="(min-width: 943px)">
-                <img  src="images/franklinlarge.jpg" alt="franklin">
-            </picture>
-            <section class="weathersummary">
-                <h3 class="summary">Weather Summary</h3>
-                <div class="summarygrid">
-                    <span class="sumleft">Currently:</span>
-                    <span class="sumright">Rain</span>
-                    <span class="sumleft">Temperature:</span>
-                    <span class="sumright">
-                    <span class="temperature">40</span>°F</span>
-                    <span class="sumleft">Wind Chill:</span>
-                    <span class="sumright">
-                    <span class="windchill"></span></span>
-                    <span class="sumleft">Humidity:</span>
-                    <span class="sumright">41%</span>
-                    <span class="sumleft">Wind Speed:</span>
-                    <span class="sumright">
-                    <span class="windSpeed">8</span>mph North</span>
-                </div>
-            </section>
+    <h2>Gallery</h2>
+    <main>
+        <div class="gallery" id="gallery">
+            <ul>
+                <li>
+                    <picture class="gallerygrid">
+                        <img src="images/placeholder.png" data-src="images/shoshone.jpg" alt="shoshone.">
+                        <figcaption>
+                            Sunrise over Shoshone falls
+                        </figcaption>
+                    </picture>
+                </li>
+                <li>
+                    <picture class="gallerygrid">
+                        <img src="images/placeholder.png" data-src="images/snow.jpg" alt="snow.">
+                        <figcaption>
+                            Snow in the mountains
+                        </figcaption>
+                    </picture>
+                </li>
+                <li>
+                    <picture class="gallerygrid">
+                        <img src="images/placeholder.png" data-src="images/horse.jpg" alt="horse.">
+                        <figcaption>
+                            Horses at sunrise
+                        </figcaption>
+                    </picture>
+                </li>
+                <li>
+                    <picture class="gallerygrid">
+                        <img src="images/placeholder.png" data-src="images/farmstorm.jpg" alt="farm.">
+                        <figcaption>
+                            Isolated storm over a farm
+                        </figcaption>
+                    </picture>
+                </li>
+                <li>
+                    <picture class="gallerygrid">
+                        <img src="images/placeholder.png" data-src="images/hot.jpg" alt="hot.">
+                        <figcaption>
+                            Record heat
+                        </figcaption>
+                    </picture>
+                </li>
+                <li>
+                    <picture class="gallerygrid">
+                        <img src="images/placeholder.png" data-src="images/rainy.jpg" alt="rain.">
+                        <figcaption>
+                            Rain on an umbrella
+                        </figcaption>
+                    </picture>
+                </li>
+                <li>
+                    <picture class="gallerygrid">
+                        <img src="images/placeholder.png" data-src="images/fog.jpg" alt="fog.">
+                        <figcaption>
+                            Foggy forrest road
+                        </figcaption>
+                    </picture>
+                </li>
+                <li>
+                    <picture class="gallerygrid">
+                        <img src="images/placeholder.png" data-src="images/goldenhour.jpg" alt="Golden hour.">
+                        <figcaption>
+                            Golden hour on a misty clearing
+                        </figcaption>
+                    </picture>
+                </li>
+                <li>
+                    <picture class="gallerygrid">
+                        <img src="images/placeholder.png" data-src="images/tornado.jpg" alt="tornado.">
+                        <figcaption>
+                            Tornado on a trail
+                        </figcaption>
+                    </picture>
+                </li>
+            </ul>
         </div>
-    </div>
-    <h2 class="forecast5">5 Day Forecast</h2>
-    <div class="forecast">
-        <div class="forecastcol">
-            <span class="forehead">Sat</span>
-            <img src="images/sunicon.jpg" alt="Sun icon">
-            <span class="data">57°F</span>
-        </div>
-        <div class="forecastcol">
-            <span class="forehead">Sun</span>
-            <img src="images/sunicon.jpg" alt="Sun icon">
-            <span class="data">62°F</span>
-        </div>
-        <div class="forecastcol">
-            <span class="forehead">Mon</span>
-            <img src="images/sunicon.jpg" alt="Sun icon">
-            <span class="data">56°F</span>
-        </div>
-        <div class="forecastcol">
-            <span class="forehead">Tue</span>
-            <img src="images/sunicon.jpg" alt="Sun icon">
-            <span class="data">47°F</span>
-        </div>
-        <div class="forecastcol">
-            <span class="forehead">wed</span>
-            <img src="images/sunicon.jpg" alt="Sun icon">
-            <span class="data">54°F</span>
-        </div>
-    </div>
-    <div class="article">
-        <img class="football" src="images/football.jpg" alt="football">
-        <h3>Pirates extend school record to 27 wins </h3>
-        <h5 class="articleauthor">By Necia Seamons & Jason Turner</h5>
-        <p id="pirates">The Pirates will use a bye this week to rest up and prepare for an expected tough game at
-            Aberdeen on Oct.
-            17. “Aberdeen is always one of our tougher games,” said coach Tyson Moser. On Sept. 30, in Dayton, West Side
-            scored often to keep its winning streak alive. On Senior Night, it was all Pirates in a 55-8 win over
-            district foe
-            Soda Springs.
-        </p>
-        <div class="contact">
-            <img class="prestonmap" src="images/prestonmap.jpg" alt="Map of Preston Idaho retrieved from Google Maps">
-            <section class="contactinfo">
-                <h4>Precision-Weather and News</h4>
-                <span>N 1st W St, Preston, Idaho 83263</a></span>
-                <br><span>📧 Precision-Weather@prestonid.com</span>
-                <br><span>📞 867-5309</span>
-                <br><img class="smicon" src="images/facebook.png" alt="Facbook icon">
-                <img class="smicon" src="images/instagram.png" alt="Instagram icon">
-                <img class="smicon" src="images/youtube.png" alt="You Tube icon">
-                <img class="smicon" src="images/whatsapp.jpg" alt="Whatsapp icon">
-            </section>
-        </div>
-    </div>
+    </main>
     <footer>
         <div class="copyright">
+            <span id="galleryVisits"></span><br />
             <p>&copy;
                 <span id="dateyear"></span>| <a href="../index.html">Daniel Allred - WDD 230</a>
                 <p>Detroit, Michigan</p>
