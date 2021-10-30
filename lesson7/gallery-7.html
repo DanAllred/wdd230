@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <script defer src="js/lazyload.js"></script>
-    <script defer src="js/lastvisit.js"></script>
+    <script defer src="js/lastupdate.js"></script>
 
 </head>
 
@@ -40,97 +40,61 @@
     </div>
     <h2>Gallery</h2>
     <main>
-        <div class="gallery" id="gallery">
-            <ul>
-                <li>
-                    <picture class="gallerygrid">
-                        <img src="images/placeholder.png" data-src="images/shoshone.jpg" alt="shoshone.">
-                        <figcaption>
-                            Sunrise over Shoshone falls
-                        </figcaption>
-                    </picture>
-                </li>
-                <li>
-                    <picture class="gallerygrid">
-                        <img src="images/placeholder.png" data-src="images/snow.jpg" alt="snow.">
-                        <figcaption>
-                            Snow in the mountains
-                        </figcaption>
-                    </picture>
-                </li>
-                <li>
-                    <picture class="gallerygrid">
-                        <img src="images/placeholder.png" data-src="images/horse.jpg" alt="horse.">
-                        <figcaption>
-                            Horses at sunrise
-                        </figcaption>
-                    </picture>
-                </li>
-                <li>
-                    <picture class="gallerygrid">
-                        <img src="images/placeholder.png" data-src="images/farmstorm.jpg" alt="farm.">
-                        <figcaption>
-                            Isolated storm over a farm
-                        </figcaption>
-                    </picture>
-                </li>
-                <li>
-                    <picture class="gallerygrid">
-                        <img src="images/placeholder.png" data-src="images/hot.jpg" alt="hot.">
-                        <figcaption>
-                            Record heat
-                        </figcaption>
-                    </picture>
-                </li>
-                <li>
-                    <picture class="gallerygrid">
-                        <img src="images/placeholder.png" data-src="images/rainy.jpg" alt="rain.">
-                        <figcaption>
-                            Rain on an umbrella
-                        </figcaption>
-                    </picture>
-                </li>
-                <li>
-                    <picture class="gallerygrid">
-                        <img src="images/placeholder.png" data-src="images/fog.jpg" alt="fog.">
-                        <figcaption>
-                            Foggy forrest road
-                        </figcaption>
-                    </picture>
-                </li>
-                <li>
-                    <picture class="gallerygrid">
-                        <img src="images/placeholder.png" data-src="images/goldenhour.jpg" alt="Golden hour.">
-                        <figcaption>
-                            Golden hour on a misty clearing
-                        </figcaption>
-                    </picture>
-                </li>
-                <li>
-                    <picture class="gallerygrid">
-                        <img src="images/placeholder.png" data-src="images/tornado.jpg" alt="tornado.">
-                        <figcaption>
-                            Tornado on a trail
-                        </figcaption>
-                    </picture>
-                </li>
-            </ul>
+        <div class="grid">
+            <picture>
+                <img src="images/placeholder.png" data-src="images/shoshone.jpg" alt="shoshone.">
+                <h3>Sunrise over Shoshone falls</h3>
+            </picture>
+
+            <picture>
+                <img src="images/placeholder.png" data-src="images/snow.jpg" alt="snow.">
+                <h3>Snow in the mountains</h3>
+            </picture>
+
+            <picture>
+                <img src="images/placeholder.png" data-src="images/horse.jpg" alt="horse.">
+                <h3>Horses at sunrise</h3>
+            </picture>
+
+            <picture>
+                <img src="images/placeholder.png" data-src="images/farmstorm.jpg" alt="farm.">
+                <h3>Isolated storm over a farm</h3>
+            </picture>
+
+            <picture>
+                <img src="images/placeholder.png" data-src="images/hot.jpg" alt="hot.">
+                <h3>Record heat</h3>
+            </picture>
+
+            <picture>
+                <img src="images/placeholder.png" data-src="images/rainy.jpg" alt="rain.">
+                <h3>Rain on an umbrella</h3>
+            </picture>
+
+            <picture>
+                <img src="images/placeholder.png" data-src="images/fog.jpg" alt="fog.">
+                <h3>Foggy forrest road</h3>
+            </picture>
+
+            <picture>
+                <img src="images/placeholder.png" data-src="images/goldenhour.jpg" alt="Golden hour.">
+                <h3>Golden hour on a misty clearing</h3>
+            </picture>
+
+            <picture>
+                <img src="images/placeholder.png" data-src="images/tornado.jpg" alt="tornado.">
+                <h3>Tornado on a trail</h3>
+            </picture>
+
         </div>
     </main>
     <footer>
         <span id="galleryVisits"></span><br />
-        <div class="copyright">
-            <p>&copy;
-                <span id="dateyear"></span>| <a href="../index.html">Daniel Allred - WDD 230</a>
-                <p>Detroit, Michigan</p>
-                <p><a href="https://www.byui.edu/online">BYU-I | online Learning</a></p>
-        </div>
-        <div class="lastupdated">
-            <span id="lastUpdated">
-                <script src="js/lastupdate.js"></script>
-            </span>
-        </div>
+        &copy; <span id="copyrightYear"></span> | <a href="../index.html"> Daniel Allred - WDD 230</a>
+        <p>Detroit, Michigan | <a href="https://www.byui.edu/online">BYU-I Online Learning</a></p>
+        <span id="currentDate"></span>
     </footer>
+
 </body>
 
 </html>
