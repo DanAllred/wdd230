@@ -230,6 +230,37 @@ h3 {
     justify-content: space-evenly;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin-bottom: 2.5%;
+  }
+  .grid picture {
+    justify-self: center;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 5px var(--gray);
+  }
+
+  .grid img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .gallerygrid picture img[data-src] {
+    filter: blur(2em);
+  }
+
+  .grid picture:hover {
+    box-shadow: 0 0 25px var(--dark);
+}
+
+picture h3 {
+    font-size: 1em;
+    text-align: left;
+}
+
 footer {
     position: relative;
     background-color: var(--primary);
@@ -238,42 +269,9 @@ footer {
     text-align: center;
   }
   
-  footer a {
-    color: inherit;
-  }
 
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
-    margin: 0;
-  }
-  .grid picture {
-    justify-self: center;
-    padding: 0;
-    margin: 0;
-    box-shadow: 0 0 5px #333;
-    
-  }
-  .grid img {
-    max-width: 100%;
-    height: auto;
-    filter: blur(0em);
-    transition: filter 0.5s;
-  }
-  
-  picture h3 {
-    text-align: center;
-    padding: 0.5em;
-  }
-  .gallerygrid figure img[data-src] {
-    filter: blur(0.2em);
-  }
 
-  .grid picture:hover {
-    box-shadow: 0 0 25px rgb(41, 42, 41);
-}
 
 
 @media only screen and (min-width: 32.5em) {

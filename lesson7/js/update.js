@@ -11,20 +11,19 @@ const options = {
 document.getElementById("currentDate").textContent = d.toLocaleDateString('en-UK', options);
 
 
-//
+//--------------------------------------------------------------//
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
 
-//
+//--------------------------------------------------------------//
 
 
-//datesbetween
+const today = d.getDay();
 const lastVisit = localStorage.getItem('lastVisit') || today; 
-//const displayDate = '';
 const millisecondsToDays = 86400000;
 if (lastVisit == today) {
-    document.querySelector('#galleryVisits').textContent = `Last visit: Today is your first visit!`;
+    document.querySelector('#galleryVisits').textContent = `Last visit: First timer!😀`;
 }
 else {
     displayDate = (lastVisit - today / millisecondsToDays).toFixed(0);
@@ -33,13 +32,10 @@ else {
  localStorage.setItem('lastVisit', today); 
 
 
-//
-WebFont.load({
-  google: {
-    families: [
-       'Oswald', 'sans serif'
-    ]
-  }
-});
+//--------------------------------------------------------------//
+
+
+
+
 
 
