@@ -30,11 +30,11 @@ html {
   }
   
   tbody tr:nth-child(even) td {
-    background-color: #e7f0ed;
+    background-color: #e4ffef;
   }
   
   tbody tr:nth-child(odd) td {
-    background-color: #e4ffef;
+    background-color: #e7f0ed;
   }
   
   #blackFriday {
