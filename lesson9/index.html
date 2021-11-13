@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Precision-Weather.com</title>
-    <meta name="description" content="Weather Site Gallery">
+    <meta name="description" content="Weather site home page">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="css/gstyle.css">
+    <link rel="stylesheet" href="css/hstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <script defer src="js/update.js"></script>
+    <script defer src="js/towninfo.js"></script>
     <script defer src="js/lazyload.js"></script>
-    
-
 </head>
 
 <body>
+
     <header>
         <div class="logo">
             <a href="home.html">
@@ -26,71 +26,52 @@
             <h1>Precision-Weather <br><span>Your Weather and News!</span></h1>
         </div>
     </header>
+
     <div class="links">
         <nav class="nav container">
             <ul class="navigation">
                 <li><a class="ham" href="#" onclick="toggleMenu()"> &#x2630; Menu </a></li>
-                <li><a href="index.html">Home</a></li>
+                <li id="home"><a href="index.html">Home</a></li>
                 <li><a href="preston-6.html"> Preston</a> </li>
                 <li><a href="#"> Soda Springs </a></li>
                 <li><a href="#"> Fish Haven </a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
-                <li id="gal"><a href="gallery-7.html">Gallery</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
                 <li><a href="home-wireframes.html">Wireframes</a></li>
             </ul>
         </nav>
     </div>
-    <h2>Gallery</h2>
+
     <main>
-        <div class="grid">
-            <picture>
-                <img src="images/placeholder.png" data-src="images/shoshone.jpg" alt="shoshone.">
-                <h3>Sunrise over Shoshone falls</h3>
+        <div class="homehero">
+            <picture class="homeheroimg">
+                <img src="images/placeholder.png" data-src="images/idaho.jpg"
+                    alt="downtown boise">
             </picture>
-
-            <picture>
-                <img src="images/placeholder.png" data-src="images/snow.jpg" alt="snow.">
-                <h3>Snow in the mountains</h3>
-            </picture>
-
-            <picture>
-                <img src="images/placeholder.png" data-src="images/horse.jpg" alt="horse.">
-                <h3>Horses at sunrise</h3>
-            </picture>
-
-            <picture>
-                <img src="images/placeholder.png" data-src="images/farmstorm.jpg" alt="farm.">
-                <h3>Isolated storm over a farm</h3>
-            </picture>
-
-            <picture>
-                <img src="images/placeholder.png" data-src="images/hot.jpg" alt="hot.">
-                <h3>Record heat</h3>
-            </picture>
-
-            <picture>
-                <img src="images/placeholder.png" data-src="images/rainy.jpg" alt="rain.">
-                <h3>Rain on an umbrella</h3>
-            </picture>
-
-            <picture>
-                <img src="images/placeholder.png" data-src="images/fog.jpg" alt="fog.">
-                <h3>Foggy forrest road</h3>
-            </picture>
-
-            <picture>
-                <img src="images/placeholder.png" data-src="images/goldenhour.jpg" alt="Golden hour.">
-                <h3>Golden hour on a misty clearing</h3>
-            </picture>
-
-            <picture>
-                <img src="images/placeholder.png" data-src="images/tornado.jpg" alt="tornado.">
-                <h3>Tornado on a trail</h3>
-            </picture>
+            <section class="homeherotext">
+                <h2>Your Weather and news!</h2>
+                <a href="stormcenter.html" class="button">Report a Storm</a>
+            </section>
 
         </div>
+        <div class="towns">
+        </div>
         
+        <div class="contact">
+            <img class="prestonmap" src="images/prestonmap.jpg" alt="Map of Preston Idaho retrieved from Google Maps">
+            <section class="contactinfo">
+                <h4>Precision-Weather and News</h4>
+                <span>N 1st W St, Preston, Idaho 83263</span>
+                <br><span>📧 Precision-Weather@prestonid.com</span>
+                <br><span>📞 867-5309</span>
+                <br><img class="smicon" src="images/facebook.png" alt="Facbook icon">
+                <img class="smicon" src="images/instagram.png" alt="Instagram icon">
+                <img class="smicon" src="images/youtube.png" alt="You Tube icon">
+                <img class="smicon" src="images/whatsapp.jpg" alt="Whatsapp icon">
+            </section>
+        </div>
     </main>
+
     <footer>
         &copy; <span id="copyrightYear"></span> | <a href="../index.html"> Daniel Allred - WDD 230</a>
         <p>Detroit, Michigan | <a href="https://www.byui.edu/online">BYU-I Online Learning</a></p>
