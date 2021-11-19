@@ -271,7 +271,7 @@ footer {
     .forecast5 {
         display: block;
         text-align: center;
-        color: var(--dark);
+        color: var(--primary);
     }
 
     .forecast {
