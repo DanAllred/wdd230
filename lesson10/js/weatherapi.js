@@ -5,7 +5,7 @@ fetch(apiURL)
         console.log(jsObject);
         document.getElementById('condition').textContent = jsObject.weather[0].description;
         document.getElementById('current-temp').textContent = jsObject.main.temp.toFixed(0);
-        document.getElementById('humidity').textContent = jsObject.main.humidity;
+        document.getElementById('humidity').textContent = jsObject.main.humidity + "%";
         document.getElementById('wind-speed').textContent = jsObject.wind.speed.toFixed(0);
         
         const temp = parseFloat(document.querySelector('#current-temp').textContent);
