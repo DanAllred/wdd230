@@ -12,7 +12,7 @@ fetch(apiURL)
         const wind = parseFloat(document.querySelector('#wind-speed').textContent);
         let wchill;
 
-        if (temp <= 50 && wind > 3) {
+        if (temp <= 50 && wind >= 3) {
         wchill = windChill(temp, wind);
    
         }
