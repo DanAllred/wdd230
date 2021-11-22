@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision-Weather.com</title>
+    <meta name="description" content="Preston Idaho">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/prstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script defer src="js/pancake.js"></script>
+    <script defer src="js/update.js"></script>
+    <script defer src="js/forecastapi.js"></script>
+    <script defer src="js/weatherapi.js"></script>    
+</head>
+
+<body>
+    <div class="pancake">
+        <p>Saturday = Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion!</p>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="images/weatherlogo.png" alt="weather logo" /></a>
+            <h1>Precision-Weather <br><span>Your Weather and News!</span></h1>
+        </div>
+    </header>
+    <div class="links">
+        <nav class="nav container">
+            <ul class="navigation">
+                <li><a class="ham" href="#" onclick="toggleMenu()"> &#x2630; Menu </a></li>
+                <li><a href="index.html">Home</a></li>
+                <li id="preston-5"><a href="preston.html"> Preston</a> </li>
+                <li><a href="#"> Soda Springs </a></li>
+                <li><a href="#"> Fish Haven </a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="herocontent">
+        <h2 id='pi'>Preston Idaho</h2>
+        <div class="hero">
+            <picture class="prestonhero">
+                <source srcset="images/franklinsmall.jpg" media="(max-width: 503px)">
+                <source srcset="images/franklinmedium.jpg" media="(max-width: 942px)">
+                <source srcset="images/franklinlarge.jpg" media="(min-width: 943px)">
+                <img  src="images/franklinlarge.jpg" alt="franklin">
+            </picture>
+            <section class="weathersummary">
+                <h3 class="summary">Weather Summary</h3>
+                <div class="summarygrid">
+                    <span class="sumleft">Temperature:</span>
+                    <span class="sumright">
+                    <span id="current-temp"></span>°F</span>
+                    <span class="sumleft">Wind Chill:</span>
+                    <span class="sumright">
+                    <span class="windchill"></span></span>
+                    <span class="sumleft">Conditions:</span>
+                    <span class="sumright" id="condition"></span>
+                    <span class="sumleft">Humidity:</span>
+                    <span class="sumright" id="humidity">%</span>
+                    <span class="sumleft">Wind Speed:</span>
+                    <span class="sumright">
+                    <span id="wind-speed"></span> mph</span>
+                 </div>
+            </section>
+        </div>
+    </div>
+    <h2 class="forecast5">5 Day Forecast</h2>
+    <div class="forecast">
+        <div class="forecastcol">
+            <span class="forehead" id="day1"></span>
+            <img src="" alt="" id="icon1">
+            <span class="data" id="temp1">°F</span>
+        </div>
+        <div class="forecastcol">
+            <span class="forehead" id="day2"></span>
+            <img src="" alt="" id="icon2">
+            <span class="data" id="temp2">°F</span>
+        </div>
+        <div class="forecastcol">
+            <span class="forehead" id="day3"></span>
+            <img src="" alt="" id="icon3">
+            <span class="data" id="temp3">°F</span>
+        </div>
+        <div class="forecastcol">
+            <span class="forehead" id="day4"></span>
+            <img src="" alt="" id="icon4">
+            <span class="data" id="temp4">°F</span>
+        </div>
+        <div class="forecastcol">
+            <span class="forehead" id="day5"></span>
+            <img src="" alt="" id="icon5">
+            <span class="data" id="temp5">°F</span>
+        </div>
+    </div>
+    <div class="article">
+        <img class="football" src="images/football.jpg" alt="football">
+        <h3>Pirates extend school record to 27 wins </h3>
+        <h5 class="articleauthor">By Necia Seamons & Jason Turner</h5>
+        <p id="pirates">The Pirates will use a bye this week to rest up and prepare for an expected tough game at
+            Aberdeen on Oct.
+            17. “Aberdeen is always one of our tougher games,” said coach Tyson Moser. On Sept. 30, in Dayton, West Side
+            scored often to keep its winning streak alive. On Senior Night, it was all Pirates in a 55-8 win over
+            district foe
+            Soda Springs.
+        </p>
+        <div class="contact">
+            <img class="prestonmap" src="images/prestonmap.jpg" alt="Map of Preston Idaho retrieved from Google Maps">
+            <section class="contactinfo">
+                <h4>Precision-Weather and News</h4>
+                <span>N 1st W St, Preston, Idaho 83263</a></span>
+                <br><span>📧 Precision-Weather@prestonid.com</span>
+                <br><span>📞 867-5309</span>
+                <br><img class="smicon" src="images/facebook.png" alt="Facbook icon">
+                <img class="smicon" src="images/instagram.png" alt="Instagram icon">
+                <img class="smicon" src="images/youtube.png" alt="You Tube icon">
+                <img class="smicon" src="images/whatsapp.jpg" alt="Whatsapp icon">
+            </section>
+        </div>
+    </div>
+    <footer>
+        &copy; <span id="copyrightYear"></span> | <a href="../index.html"> Daniel Allred - WDD 230</a>
+        <p>Detroit, Michigan | <a href="https://www.byui.edu/online">BYU-I Online Learning</a></p>
+        <p><a href="https://openweathermap.org/">OpenWeathermap.com</a></p>
+        <span id="currentDate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>  
+    <script src="js/fonts.js"></script>
+</body>
+
+</html>
