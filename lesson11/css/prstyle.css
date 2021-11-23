@@ -345,4 +345,10 @@ footer {
 		left: 45px;
 		bottom: 25px;
 	}
+
+    .prestonhero img {
+        display: block;
+        margin-left: -5%;
+    }
+
 }
