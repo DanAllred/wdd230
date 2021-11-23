@@ -599,7 +599,7 @@ footer {
         margin: 0 auto;
         width: 100%;
         height: auto;
-        padding: 0;
+        padding: 0em;
         box-shadow: none;
         text-align: center;
     }
@@ -646,8 +646,8 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 5px;
         padding: 20px;
-        max-width: 1500px;
         margin: 5px 0 5px 0;
+
     }
 
     div.towns section {
