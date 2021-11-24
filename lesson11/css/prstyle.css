@@ -342,7 +342,6 @@ footer {
         display: block;
         width: 350px;
         height: auto;
-        box-shadow: 0 0 5px #333;
         margin: 1rem;
     }
 
@@ -350,6 +349,16 @@ footer {
         width: 36px;
         height: auto;
     }
+
+    .localevents, #ue {
+        background: var(--white);
+        color: var(--primary);
+    }
+
+    .article {
+        background-color: var(--gray);
+    }
+
 }
 
 @media only screen and (min-width: 60em) {

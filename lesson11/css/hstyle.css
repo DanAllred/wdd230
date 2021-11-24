@@ -207,11 +207,12 @@ h3 {
 .contact {
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 1000px;
+    max-width: 100%px;
     margin: 25px auto;
     justify-items: center;
     align-items: center;
     padding: 1.2rem;
+    background-color: var(--gray);
 }
 
 .prestonmap {
