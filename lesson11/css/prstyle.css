@@ -87,6 +87,16 @@ h3 {
     color: var(--dark);
 }
 
+#ss {
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+#fh {
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
 .navigation li {
     display: none;
 }
@@ -134,11 +144,8 @@ ul {
     position: relative;
 	margin: 25px auto;
 	padding: 1.5rem;
-    background: var(--primary);
     opacity: .88;
-    color: var(--white);
-    border: 1pt solid var(--primary);
-    box-shadow: 0 0 5px var(--gray);
+    color: var(--primary);
 }
 
 .summarygrid {
@@ -165,11 +172,25 @@ ul {
     display: none;
 }
 
+.localevents, #ue {
+    background: var(--primary);
+    color: var(--white);
+}
+
+div.eventcontainer {
+    text-align: center;
+    background-color:  var(--primary);
+    padding: 10px;
+    color: var(--white);
+    max-width: 400px;
+    margin: auto;
+  }
+
 .article {
     position: relative;
     margin: 25px auto;
     padding: 1.2rem;
-    background-color: var(--gray);
+    background-color: var(--white);
     text-align: left;
 }
 
@@ -200,7 +221,6 @@ ul {
 .contactinfo {
     line-height: 2rem;
 }
-
 
 .smicon {
     padding: .5rem;
@@ -266,6 +286,7 @@ footer {
 		position: absolute;
 		bottom: 2.5%;
 		left: 14%;
+        background: var(--primary);
 	}
 
     .forecast5 {
@@ -280,7 +301,6 @@ footer {
         margin: 25px auto;
         max-width: 700px;
         border-right: 1px solid var(--dark);
-        box-shadow: 0 0 5px #333;
     }
 
     .forecastcol {
@@ -344,6 +364,7 @@ footer {
 		line-height: 1.2em;
 		left: 45px;
 		bottom: 25px;
+        color: var(--white);
 	}
 
     .prestonhero img {

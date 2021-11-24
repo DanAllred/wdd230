@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Precision-Weather.com</title>
-    <meta name="description" content="Preston Idaho">
+    <meta name="description" content="Fish Haven">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/prstyle.css">
@@ -14,15 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <script defer src="js/pancake.js"></script>
     <script defer src="js/update.js"></script>
-    <script defer src="js/forecastapi.js"></script>
-    <script defer src="js/weatherapi.js"></script>
-    <script defer src="js/pevents.js"></script>
+    <script defer src="js/fhforecastapi.js"></script>
+    <script defer src="js/fhweatherapi.js"></script>
+    <script defer src="js/fevents.js"></script>
 </head>
 
 <body>
-    <div class="pancake">
-        <p>Saturday = Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion!</p>
-    </div>
     <header>
         <div class="logo">
             <a href="home.html">
@@ -35,22 +32,22 @@
             <ul class="navigation">
                 <li><a class="ham" href="#" onclick="toggleMenu()"> &#x2630; Menu </a></li>
                 <li><a href="index.html">Home</a></li>
-                <li id="preston-5"><a href="preston.html"> Preston</a> </li>
+                <li><a href="preston.html"> Preston</a> </li>
                 <li><a href="sodasprings.html"> Soda Springs </a></li>
-                <li><a href="fishhaven.html"> Fish Haven </a></li>
+                <li id='fh'><a href="fishhaven.html"> Fish Haven </a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
     </div>
     <div class="herocontent">
-        <h2 id='pi'>Preston Idaho</h2>
+        <h2 id='pi'>Fish Haven</h2>
         <div class="hero">
             <picture class="prestonhero">
-                <source srcset="images/franklinsmall.jpg" media="(max-width: 503px)">
-                <source srcset="images/franklinmedium.jpg" media="(max-width: 942px)">
-                <source srcset="images/franklinlarge.jpg" media="(min-width: 943px)">
-                <img  src="images/franklinlarge.jpg" alt="franklin">
+                <source srcset="images/fhsmall.jpg" media="(max-width: 503px)">
+                <source srcset="images/fhmedium.jpg" media="(max-width: 942px)">
+                <source srcset="images/fhlarge.jpg" media="(min-width: 943px)">
+                <img  src="images/fhlarge.jpg" alt="Fish Haven">
             </picture>
             <section class="weathersummary">
                 <h3 class="summary">Weather Summary</h3>
@@ -101,18 +98,17 @@
         </div>
     </div>
         <div class="localevents">
-        <h2>Upcoming Events</h2>
+        <h2 id="ue">Upcoming Events</h2>
     </div>
     <div class="article">
-        <img class="football" src="images/football.jpg" alt="football">
-        <h3>Pirates extend school record to 27 wins </h3>
-        <h5 class="articleauthor">By Necia Seamons & Jason Turner</h5>
-        <p id="pirates">The Pirates will use a bye this week to rest up and prepare for an expected tough game at
-            Aberdeen on Oct.
-            17. “Aberdeen is always one of our tougher games,” said coach Tyson Moser. On Sept. 30, in Dayton, West Side
-            scored often to keep its winning streak alive. On Senior Night, it was all Pirates in a 55-8 win over
-            district foe
-            Soda Springs.
+        <img class="football" src="images/fharticle.jpg" alt="football">
+        <h3>Paris Tabernacle Concert</h3>
+        <h5 class="articleauthor">By Marie Searlke</h5>
+        <p id="pirates">Kim Hulme of Montpelier accompanied a group of her piano and vocal students, along with a few of their friends, when they 
+            presented an outstanding vocal and instrumental concert as part of the ongoing Paris Tabernacle concert series on Friday night November 12.
+            Introducing the program, Kim said that the young people, who live in the Bear Lake Valley, began singing together in sacrament meetings of
+            The Church of Jesus Christ of Latter-day Saints. They have also sung in school functions and at the Bear Lake County Fair. This was their
+             first performance in the Paris Tabernacle.
         </p>
         <div class="contact">
             <img class="prestonmap" src="images/prestonmap.jpg" alt="Map of Preston Idaho retrieved from Google Maps">

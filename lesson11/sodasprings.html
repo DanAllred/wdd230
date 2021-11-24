@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Precision-Weather.com</title>
-    <meta name="description" content="Preston Idaho">
+    <meta name="description" content="Soda Springs">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/prstyle.css">
@@ -14,15 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <script defer src="js/pancake.js"></script>
     <script defer src="js/update.js"></script>
-    <script defer src="js/forecastapi.js"></script>
-    <script defer src="js/weatherapi.js"></script>
-    <script defer src="js/pevents.js"></script>
+    <script defer src="js/ssforecastapi.js"></script>
+    <script defer src="js/ssweatherapi.js"></script>
+    <script defer src="js/sevents.js"></script>
 </head>
 
 <body>
-    <div class="pancake">
-        <p>Saturday = Preston Pancakes in the Park! <br> 9:00 a.m. Saturday at the city park pavilion!</p>
-    </div>
     <header>
         <div class="logo">
             <a href="home.html">
@@ -35,8 +32,8 @@
             <ul class="navigation">
                 <li><a class="ham" href="#" onclick="toggleMenu()"> &#x2630; Menu </a></li>
                 <li><a href="index.html">Home</a></li>
-                <li id="preston-5"><a href="preston.html"> Preston</a> </li>
-                <li><a href="sodasprings.html"> Soda Springs </a></li>
+                <li><a href="preston.html"> Preston</a> </li>
+                <li id="ss"><a href="sodasprings.html"> Soda Springs </a></li>
                 <li><a href="fishhaven.html"> Fish Haven </a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -47,10 +44,10 @@
         <h2 id='pi'>Preston Idaho</h2>
         <div class="hero">
             <picture class="prestonhero">
-                <source srcset="images/franklinsmall.jpg" media="(max-width: 503px)">
-                <source srcset="images/franklinmedium.jpg" media="(max-width: 942px)">
-                <source srcset="images/franklinlarge.jpg" media="(min-width: 943px)">
-                <img  src="images/franklinlarge.jpg" alt="franklin">
+                <source srcset="images/sssmall.jpg" media="(max-width: 503px)">
+                <source srcset="images/ssmedium.jpg" media="(max-width: 942px)">
+                <source srcset="images/sslarge.jpg" media="(min-width: 943px)">
+                <img  src="images/sslarge.jpg" alt="soda springs geysor">
             </picture>
             <section class="weathersummary">
                 <h3 class="summary">Weather Summary</h3>
@@ -104,15 +101,15 @@
         <h2>Upcoming Events</h2>
     </div>
     <div class="article">
-        <img class="football" src="images/football.jpg" alt="football">
-        <h3>Pirates extend school record to 27 wins </h3>
-        <h5 class="articleauthor">By Necia Seamons & Jason Turner</h5>
-        <p id="pirates">The Pirates will use a bye this week to rest up and prepare for an expected tough game at
-            Aberdeen on Oct.
-            17. “Aberdeen is always one of our tougher games,” said coach Tyson Moser. On Sept. 30, in Dayton, West Side
-            scored often to keep its winning streak alive. On Senior Night, it was all Pirates in a 55-8 win over
-            district foe
-            Soda Springs.
+        <img class="football" src="images/ssarticle.jpg" alt="football">
+        <h3>Small earthquake strikes northwest of Soda Springs </h3>
+        <p id="pirates">SODA SPRINGS, Idaho   –   Some Caribou County residents, and nearby residents in eastern Idaho may, have felt a small earthquake on Monday afternoon.
+        The United States Geological Survey and the University of Utah reported that a relatively small earthquake, one strong enough to be felt by residents, struck northwest of Soda Springs at around 2:12 p.m. Monday afternoon.
+        The 3.4 magnitude earthquake’s epicenter was located just nine miles west-northwest of Soda Springs, and was just over three miles deep.
+        Caribou County Sheriff’s Office received no reports of major damage or any injuries as a result of the quake.
+        This earthquake follows other reports of small quakes that occurred early Friday morning between Soda Springs and the Wyoming border. Those quakes were reported between 2 and
+        2.4 in magnitude.Monday’s Soda Springs tremblor is the largest regional earthquake this year, and the third largest quake in the region over the last 12 months.
+        A 3.5 magnitude quake was recorded in West Yellowstone, Montana about a month ago, and 4 months ago a 3.9 magnitude quake rattled Garland, Utah. It was the largest quake in the last 365 days.
         </p>
         <div class="contact">
             <img class="prestonmap" src="images/prestonmap.jpg" alt="Map of Preston Idaho retrieved from Google Maps">
