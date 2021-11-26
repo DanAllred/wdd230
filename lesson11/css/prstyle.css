@@ -172,8 +172,11 @@ ul {
     display: none;
 }
 
-.localevents, #ue {
+.localevents {
     background: var(--primary);
+}
+
+#ue {
     color: var(--white);
 }
 
