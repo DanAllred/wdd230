@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterford Township</title>
+    <meta name="description" content="Waterford Township">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
+    <script defer src="js/update.js"></script>
+    <script defer src="js/towninfo.js"></script>
+    <script defer src="js/lazyload.js"></script>
+    <script defer src="js/weather.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="images/logo.png" alt="logo" /></a>
+            <h1>Waterford Township<br><span>With Us, There Are No Boundaries.</span></h1>
+        </div>
+    </header>
+
+    <div class="links">
+        <nav class="nav container">
+            <ul class="navigation">
+                <li><a class="ham" href="#" onclick="toggleMenu()"> &#x2630; Menu </a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="city.html">Waterford TWP</a> </li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="homehero">
+            <picture class="homeheroimg">
+                <img src="images/placeholder.png" data-src="images/macedaylake.jpg" alt="fall kayak on maceday lake">
+            </picture>
+            <section class="homeherotext">
+                <h2>Waterford Business and News!</h2>
+                <a href="membership.html" class="button">Join Now!</a>
+            </section>
+        </div>
+        <main>
+            <div class="formcontainer">
+                <form method="get" action="thankyou.html">
+                    <h2>Contact Us</h2>
+                    <label class="top">Full Name*<input type="text" name="fname" required
+                            pattern="[A-Za-z].{5,}"></label>
+                    <label class="top">Email*<input type="email" name="email" required
+                            placeholder="JohnDoe@gmail.com"></label>
+                    <label class="top">Phone<input type="tel" name="phone" placeholder="5551231234"></label>
+                    <label for="comment" class="top">Comments<textarea name="comment" id="comment" cols="50"
+                            rows="10"></textarea></label>
+                </form>
+            </div>
+            <div class="contact">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=waterford%20area%20chamber&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://fmovies-online.net"></a><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 500px;
+                                width: 600px;
+                            }
+                        </style><a href="https://www.embedgooglemap.net">show google map on website</a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 400px;
+                                width: 500px;
+                            }
+                        </style>
+                    </div>
+                </div>
+                <section class="contactinfo">
+                    <h4>Waterford Chamber of Commerce</h4>
+                    <span>2309 Airport Rd, Waterford Twp, MI 48327</span>
+                    <br><span>📧 waterford-mi.us</span>
+                    <br><span>📞 867-5309</span>
+                    <br>
+                    <br><img class="smicon" src="images/facebook.png" alt="Facbook icon">
+                    <img class="smicon" src="images/instagram.png" alt="Instagram icon">
+                    <img class="smicon" src="images/youtube.png" alt="You Tube icon">
+                    <img class="smicon" src="images/whatsapp.jpg" alt="Whatsapp icon">
+                </section>
+            </div>
+            <div class="boardsection">
+                <h2 id="bmtitle">Board of Directors</h2>
+                <div class="board">
+                    <div class="member">
+                        <img src="images/placeholder.png" data-src="images/bm1.jpg" alt="Marcy Kilpack">
+                    </div>
+                    <div class="member">
+                        <img src="images/placeholder.png" data-src="images/bm2.jpg" alt="Chris Thompson">
+                    </div>
+                    <div class="member">
+                        <img src="images/placeholder.png" data-src="images/bm3.jpg" alt="Mike Holland">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            &copy; <span id="copyrightYear"></span> | <a href="../index.html"> Daniel Allred - WDD 230</a>
+            <p>Detroit, Michigan | <a href="https://www.byui.edu/online">BYU-I Online Learning</a></p>
+            <p><a href="https://openweathermap.org/">OpenWeathermap.com</a></p>
+            <span id="currentDate"></span>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="js/fonts.js"></script>
+</body>
+
+</html>

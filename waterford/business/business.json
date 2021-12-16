@@ -1,0 +1,67 @@
+{
+    "business": [
+        {
+            "name": "1234me Pressure Washing", 
+            "phone": "(248) 648-9839",
+            "address": "1315 Irwin Dr",
+            "website": "www.1234me.com",
+            "logo": "images/1234me.jpg"
+        },
+        {
+            "name": "A & B Automotive, LLC", 
+            "phone": "(248) 801-9300",
+            "address": "2253 Dixie Hwy",
+            "website": "www.abmotors.biz",
+            "logo": "images/abm.jpg"
+        },
+        {
+            "name": "A World of Glass", 
+            "phone": "(248) 623-1080",
+            "address": "7627 Highland Rd",
+            "website": "www.aworldofglassllc.com" ,
+            "logo": "images/awg.jpg"
+        },
+        {
+            "name": "A. Young Insurance Agency, Inc.", 
+            "phone": "(248) 682.0077",
+            "address": "1400 Scott Lake Rd Suite AA",
+            "website": "ayounginsurance.com/",
+            "logo": "images/ayi.jpg"
+        },
+        {
+            "name": "Accurate Woodworking & Cabinet", 
+            "phone": "(248) 666-3755",
+            "address": "7675 Highland Rd",
+            "website": "www.accuratewoodworking.com",
+            "logo": "images/accurate.jpg"
+        },
+        {
+            "name": "Adler's Towing", 
+            "phone": "(248) 335-9541",
+            "address": "1711 N Telegraph Rd",
+            "website": "www.adlerstowing.com",
+            "logo": "images/adler.jpg"
+        },
+        {
+            "name": "Advance Packaging Technologies", 
+            "phone": "(248) 674-3126",
+            "address": "5720 Williams Lake Rd",
+            "website": "www.advancepac.com",
+            "logo": "images/adt.jpg"
+        },
+        {
+            "name": "Alex's Taproom Bistro", 
+            "phone": "(248) 297-5520",
+            "address": "4707 White Lake Rd",
+            "website": "alexsclarkston.com/taproom-bistro",
+            "logo": "images/alex.jpg"
+        },
+        {
+            "name": "All Saints Cemetery & The Preserve Cemetery", 
+            "phone": "(248) 623-9633",
+            "address": "4401 Nelsey Rd",
+            "website": "www.mtelliott.com/allsaints",
+            "logo": "images/as.jpg"
+        }
+    ]
+}
